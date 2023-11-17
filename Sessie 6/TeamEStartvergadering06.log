@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.30)  16 NOV 2023 22:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.30)  17 NOV 2023 11:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -317,27 +317,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 15.
-<kanban.pdf, id=5, 614.295pt x 317.185pt>
+<kanban.pdf, id=6, 614.295pt x 317.185pt>
 File: kanban.pdf Graphic file (type pdf)
 <use kanban.pdf>
 Package pdftex.def Info: kanban.pdf  used on input line 34.
 (pdftex.def)             Requested size: 472.03123pt x 243.72984pt.
+<kanban2.pdf, id=7, 614.295pt x 237.88875pt>
+File: kanban2.pdf Graphic file (type pdf)
+<use kanban2.pdf>
+Package pdftex.def Info: kanban2.pdf  used on input line 41.
+(pdftex.def)             Requested size: 472.03123pt x 182.79738pt.
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./kanban.pdf>] (./TeamEStartvergadering06.aux)
+[2 <./kanban.pdf> <./kanban2.pdf>] (./TeamEStartvergadering06.aux)
 Package rerunfilecheck Info: File `TeamEStartvergadering06.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9615 strings out of 476025
- 155217 string characters out of 5790017
- 1856388 words of memory out of 5000000
- 29966 multiletter control sequences out of 15000+600000
+ 9625 strings out of 476025
+ 155389 string characters out of 5790017
+ 1860388 words of memory out of 5000000
+ 29975 multiletter control sequences out of 15000+600000
  516927 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,489b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,76p,801b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
@@ -345,10 +350,10 @@ sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
 ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on TeamEStartvergadering06.pdf (2 pages, 125641 bytes).
+Output written on TeamEStartvergadering06.pdf (2 pages, 160338 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
