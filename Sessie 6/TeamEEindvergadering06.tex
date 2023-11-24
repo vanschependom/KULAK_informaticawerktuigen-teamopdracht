@@ -2,10 +2,11 @@
 \usepackage[dutch]{babel}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage[bottom=2.5cm, right=2.5cm, left=2.5cm, top=2.5cm]{geometry}
 
 
-\title{Eindvergadering ML sessie X}
-\author{Team $\exists$uler \and
+\title{Eindvergadering ML sessie 6}
+\author{Team $\exists$uler \\
 	\textit{Daan, Marie, Zeineb, Florian, Vincent, Jasper, Lasha, Younes}}
 \date{Vrijdag \today}
 
@@ -15,14 +16,15 @@
 
 \section*{Reflectie}
 
-...
+Deze sessie zijn we aan de slag gegaan met de module \texttt{sklearn} om de Support Vector Machines techniek toe te passen op onze dataset met verschillende tumoren. Daan heeft simulatie 4 afgewerkt. Marie en Zeineb hebben de tweede simulatie en de bijhorende figuur afgewerkt. Lasha en Florian hebben simulatie 1 afgewerkt, maar op de gehele dataset. Deze is heel groot, waardoor ze tussen de verschillende metaparameters niet veel verschil merkten. Illustratie 2 werd afgewerkt door Younes en Jasper werkte simulatie 3 af, toegepast op de RBF kernel.
 
-\section*{Vooruitblik  \& todo's}
+\section*{Naar volgende week toe}
 
-...
+De module \texttt{sklearn} werkt zeer goed en aan de hand van de verschillende kernels kunnen we hele hoge accuraatheden verkrijgen op testdata, nadat we de optimale metaparameters gezocht hebben aan de hand van \textit{cross-validation}.
 
-\begin{itemize}
-	\item ...
-\end{itemize}
+Stijn merkte echter op we de SVM-techniek beter zelf ook helemaal handmatig implementeren, door de support vectors en alle bijhorende zaken helemaal zelf wiskundig af te leiden.
+Hiervoor zou hij zich beperken tot de lineare SVM, omdat het anders te ver leidt. Deze techniek zou dan ook te doen zijn om uit te leggen tijdens de postersessie, terwijl dat met de ingewikkelde kernels, zoals \textit{rbf}, moeilijker is.
+
+We zullen naar volgende week toe dus ook proberen om de SVM-techniek handmatig te implementeren. Dit zullen we doen op eenvoudigere data of op een beperkt deel van onze tumordataset.
 
 \end{document}
