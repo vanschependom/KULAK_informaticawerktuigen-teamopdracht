@@ -1,0 +1,50 @@
+\documentclass[twoside, kulak]{kulakreport}
+\usepackage[dutch]{babel}
+\usepackage{subfiles}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Support Vector Machines als \\middel voor tumorclassificatie}
+\subtitle{Eindverslag van de teamopdacht}
+\author{Team $\exists$uler}
+\emailaddress{}
+\date{Academiejaar 2023 -- 2024}
+\faculty{Groep Wetenschap \& Technologie Kulak}
+\group{Bachelor fysica, informatica, wiskunde\\
+       ingenieurswetenschappen\\[1ex]
+	   X0B53A -- Probleemoplossen en ontwerpen, deel 1\\
+       X0A22D -- Informaticawerktuigen}
+\institute{Vincent Van Schependom, Daan Vanhaverbeke, Jasper Benoit, Lasha Shergelashvili, Marie Taillieu, Zeineb Kharbach Florian	Degraeve, \\Younes Mebarki}
+\address{
+   \textbf{KU Leuven Kulak} \\
+   \textbf{Groep Wetenschap \& Technologie} \\
+   Etienne Sabbelaan 53\\
+   8500 Kortrijk}
+   
+   \newcommand{\norm}[1]{\left\| #1 \right\|}
+
+\begin{document}
+
+\titlepage
+
+\tableofcontents
+
+\subfile{inleiding}
+
+\subfile{machine-learning}
+
+\subfile{supervised-learning}
+
+\subfile{classificatie}
+
+\subfile{model}
+
+\subfile{svm}
+
+\subfile{besluit}
+
+\bibliographystyle{unsrt}
+\bibliography{referenties}
+
+\end{document}
