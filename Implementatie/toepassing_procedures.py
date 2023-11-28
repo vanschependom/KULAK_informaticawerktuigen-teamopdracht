@@ -105,3 +105,30 @@ def hyperplaneFunctie(x, w, b, offset):
         De y-waarde op het hyperplane voor de gegeven x-waarde.
     '''
     return (-w[0] * x + b + offset) / w[1]
+
+
+def accuraatheid(voorspellingen, labels, w, b):
+    '''
+    Deze functie berekent de accuraatheid van het model.
+
+    Parameters
+    ----------
+    voorspellingen : ndarray
+        De voorspellingen van het model.
+    labels : ndarray
+        De labels van de datapunten.
+    w : ndarray
+        De gewichtsvector van het model.
+    b : float
+        De bias term van het model.
+
+    Returns
+    -------
+    float
+        De accuraatheid van het model in procent.
+    '''
+    aantalCorrect = 0
+    for i in range(len(voorspellingen)):
+        if voorspellingen[i] == labels[i]:
+            aantalCorrect += 1
+    return (aantalCorrect / len(voorspellingen)) * 100
