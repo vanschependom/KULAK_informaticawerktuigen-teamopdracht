@@ -24,9 +24,11 @@
 	
 	Waar Support Vector Machines in uitblinken, is het verwerken van datasets waarvan de datapunten elk zeer veel features hebben. SVM werkt namelijk uitermate goed in hoger dimensionale ruimtes, die we helaas dus niet visueel kunnen illustreren. Zo zouden we de tumoren met zeer hoge accuraatheid kunnen classificeren indien we de volledige lijst kenmerken in acht nemen.
 	
-	Daarnaast is SVM minder gevoelig voor overfitting in vergelijking met complexere modellen zoals neurale netwerken. Dit is vooral belangrijk wanneer de data die voorhanden is, eerder beperkt is in grootte. SVM zal dus voor kleinere datasets heel goed presteren.
+	Daarnaast is SVM minder gevoelig voor overfitting in vergelijking met complexere modellen zoals neurale netwerken. Dit is vooral belangrijk wanneer de data die voorhanden is, eerder beperkt is in grootte. SVM zal dus voor kleinere datasets heel goed presteren, i.h.b. als het aantal features groter is dan het aantal datapunten.
 	
-	Indien er, tot slot, heel veel variabiliteit is in de dataset, zal SVM ook een \textit{edge} hebben tegenover andere classificatietechnieken: juist door het feit dat de marge tussen de scheidingshyperplanes zo groot mogelijk wordt gehouden, zullen \textit{outliers} of andere vormen van ruis in de dataset niet in acht worden genomen.
+	Indien er heel veel variabiliteit is in de dataset, zal SVM ook een \textit{edge} hebben tegenover andere classificatietechnieken: juist door het feit dat de marge tussen de scheidingshyperplanes zo groot mogelijk wordt gehouden, zullen \textit{outliers} of andere vormen van ruis in de dataset niet in acht worden genomen.
+	
+	Tot slot is SVM zeer geheugenefficiënt: het model houdt enkel rekening met de dichtste punten tot de hyperplanes en zal dus, in tegenstelling tot bijvoorbeeld logistische regressie, niet met elk punt rekening moeten houden in de berekening van de beste beslissingsgrens.
 	
 	\section{Wiskundige berekening van het model}
 	
@@ -67,8 +69,8 @@
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=\textwidth]{lambda}
-		\caption{De invloed van de metaparameter \(\lambda\)op het SVM-model. Een grote \(\lambda\) resulteert in een grote marge, een kleine \(\lambda\) resulteert in een kleine marge.}
+		\includegraphics[width=.99\textwidth]{lambda}
+		\caption{De invloed van de metaparameter \(\lambda\) op het SVM-model. Een grote \(\lambda\) resulteert in een grote marge, een kleine \(\lambda\) resulteert in een kleine marge.}
 		\label{fig:lambda}
 	\end{figure}
 	
