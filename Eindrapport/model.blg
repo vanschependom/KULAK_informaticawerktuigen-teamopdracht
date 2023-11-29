@@ -3,9 +3,9 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: model.aux
 I found no \bibdata command---while reading file model.aux
 I found no \bibstyle command---while reading file model.aux
-You've used 2 entries,
+You've used 1 entry,
             0 wiz_defined-function locations,
-            86 strings with 527 characters,
+            85 strings with 510 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

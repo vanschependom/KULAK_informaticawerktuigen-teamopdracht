@@ -4,15 +4,22 @@
 	
 	\chapter{Supervised Learning}
 	
-	\section{Supervised vs Unsupervised}
+	\label{tekst:supervisedlearning}
 	
-	\emph{Machine Learning} wordt meestal gesplitst onder twee categoriën. \emph{Supervised Learning} en \emph{Unsupervised Learning}. Het grootste verschil tussen de twee, is dat \emph{Supervised Learning} in tegenstelling tot \emph{Unsupervised Learning} data met labels gebruikt.
-	Bij \emph{Supervised Learning} bestaat data uit parameters en labels. Men traint een \emph{Supervised Learning} techniek op dergelijke data waardoor men vervolgens zal kunnen de labels voorspellen voor nieuwe gegeven waarden voor de parameters.
-	Bij \emph{Unsupervised Learning} zal de data enkel uit parameters bestaan. Een  \emph{Unsupervised Learning} techniek zal zelf patronen/structuren vinden in de data en vervolgens zelf labels uitvinden en geven aan de tuples van data.
+	\section{Supervised vs unsupervised}
 	
-	\section{Vormen van Supervised Learning}
-	\emph{Supervised Learning} en \emph{Unsupervised Learning} kan nog verder gesplitst worden in categoriën; de twee voornaamste vormen van \emph{Supervised Learning} zijn regressie en classificatie. Bij regressie bestaan de labels altijd uit getallen, waarbij de labels oneindige verschillende waarden kunnen aannemen. Dit staat in tegenstelling met classificatie waar de labels enkel een telbaar aantal waarden kunnen aannemen, dit kunnen getallen zijn wat quantitatieve classificatie genoemd wordt of ze kunnen ook woorden zijn wat qualitatieve classificatie genoemd wordt.
-	Classificatie zal later in wat meer detail uitgelegd worden.
-	De verschillende vormen van \emph{Unsupervised Learning} ligt buiten de scope van dit rapport.
+	Machine learning kan worden opgesplitst in twee grote categorieën; \textit{supervised learning} enerzijds en \textit{unsupervised learning} anderzijds. De naam van beide vormen geeft eigenlijk al weg wat deze vormen precies inhouden.
+	
+	Bij \textit{unsupervised learning} hebben we voor elk datapunt in onze dataset zowel features als outputs voor handen. Er is sprake van zogenaamde 'input-outputparen'. We kunnen ons model trainen op het vinden van een verband tussen de \(x\)-waarden en de \(y\)-waarden in onze trainingsdataset. Het uiteindelijke doel is dan dat het model voor een nieuwe dataset, op basis van de features in die dataset, een output zal voorspellen.
+	
+	Bij \textit{unsupervised learning} zal de data enkel uit inputs of \(x\)-waarden bestaan en hebben we dus geen afhankelijke variabelen. Een \textit{unsupervised learning}-model zal zelf patronen of structuren trachten te vinden in de data en vervolgens de data zelf onderverdelen in klassen. De details achter \emph{unsupervised learning} liggen buiten de scope van dit rapport en zullen we dus achterwege laten.
+	
+	\section{Vormen van supervised learning}
+	
+	\textit{Supervised learning} kan nog verder gesplitst worden in twee categorieën; de twee voornaamste vormen van \textit{supervised learning} zijn regressie en classificatie. 
+	
+	Bij regressie zijn de outputs altijd getallen. Deze numerieke outputs kunnen eender welke waarde aannemen. We kunnen hierbij dus spreken van \textit{kwantitatieve data}. Het getrainde model zal trachten een continu numeriek resultaat te voorspellen voor de output van een nieuw datapunt - waarop het model dus niet getraind is.
+	
+	Dit staat in tegenstelling met classificatie, waar de outputs enkel een telbaar aantal waarden kunnen aannemen. We zullen in hoofdstuk \ref{tekst:classificatie} classificatie in meer detail toelichten.
 	
 \end{document}

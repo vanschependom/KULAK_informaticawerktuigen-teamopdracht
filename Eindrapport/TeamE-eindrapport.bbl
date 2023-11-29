@@ -1,15 +1,33 @@
 \begin{thebibliography}{1}
 
-\bibitem{james2023introduction}
-Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan
-  Taylor.
-\newblock An introduction to statistical learning: With applications in python.
-\newblock {\em (No Title)}, 2023.
+\bibitem{tumoronderzoek}
+William~Nick Street, William~H. Wolberg, and Olvi~L. Mangasarian.
+\newblock Nuclear feature extraction for breast tumor diagnosis.
+\newblock In {\em Electronic imaging}, 1993.
 
-\bibitem{Bhande_2018}
-Anup Bhande.
-\newblock What is underfitting and overfitting in machine learning and how to
-  deal with it., Mar 2018.
+\bibitem{tumordataset}
+Mangasarian Olvi Street~Nick Wolberg, William and W.~Street.
+\newblock {Breast Cancer Wisconsin (Diagnostic)}.
+\newblock UCI Machine Learning Repository, 1995.
+\newblock {DOI}: https://doi.org/10.24432/C5DW2B.
+
+\bibitem{KML}
+Stijn Rebry.
+\newblock Kennismaking met machinaal leren, academiejaar 2023-2024.
+\newblock KU Leuven Campus Kulak Kortrijk.
+
+\bibitem{Luca_2022}
+Gabriele~De Luca.
+\newblock Svm vs neural network, Nov 2022.
+
+\bibitem{Ramo_2017}
+Klevis Ramo.
+\newblock Spam emails with support vector machines, Dec 2017.
+
+\bibitem{bzdok2018machine}
+Danilo Bzdok, Martin Krzywinski, and Naomi Altman.
+\newblock Machine learning: supervised methods.
+\newblock {\em Nature methods}, 15(1):5, 2018.
 
 \bibitem{enwiki:1183475870}
 {Wikipedia contributors}.
