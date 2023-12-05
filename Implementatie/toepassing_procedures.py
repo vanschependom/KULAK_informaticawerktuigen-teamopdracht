@@ -107,7 +107,7 @@ def hyperplaneFunctie(x, w, b, offset):
     return (-w[0] * x + b + offset) / w[1]
 
 
-def accuraatheid(voorspellingen, labels, w, b):
+def accuraatheid(voorspellingen, labels):
     '''
     Deze functie berekent de accuraatheid van het model.
 
