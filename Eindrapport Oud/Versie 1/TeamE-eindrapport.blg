@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TeamE-eindrapport.aux
+The style file: unsrt.bst
+Database file #1: referenties.bib
+Name 1 in "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." has a comma at the end for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+You've used 8 entries,
+            1791 wiz_defined-function locations,
+            496 strings with 4861 characters,
+and the built_in function-call counts, 1197 in all, are:
+= -- 92
+> -- 50
+< -- 0
++ -- 21
+- -- 13
+* -- 38
+:= -- 194
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 51
+empty$ -- 152
+format.name$ -- 13
+if$ -- 275
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 2
+newline$ -- 44
+num.names$ -- 8
+pop$ -- 47
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 3
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 9
+width$ -- 9
+write$ -- 85
+(There were 4 error messages)

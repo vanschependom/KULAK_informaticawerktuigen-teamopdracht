@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TeamE-eindrapport.aux
+The style file: unsrt.bst
+Database file #1: referenties.bib
+I was expecting a `,' or a `}'---line 72 of file referenties.bib
+ :  
+ :  note={Bezocht op 8 december 2023}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." has a comma at the end for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W." for entry tumordataset
+while executing---line 944 of file unsrt.bst
+You've used 7 entries,
+            1791 wiz_defined-function locations,
+            491 strings with 5003 characters,
+and the built_in function-call counts, 1097 in all, are:
+= -- 90
+> -- 46
+< -- 0
++ -- 19
+- -- 12
+* -- 33
+:= -- 183
+add.period$ -- 25
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 46
+empty$ -- 134
+format.name$ -- 12
+if$ -- 253
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 2
+newline$ -- 42
+num.names$ -- 7
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 3
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 8
+width$ -- 8
+write$ -- 81
+(There were 5 error messages)

@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{mediumarticle}
+Tarlan Ahadli.
+\newblock Linear svm classifier: Step-by-step theoretical explanation with
+  python implementation.
+\newblock
+  \href{https://medium.com/@tarlanahad/linear-svm-classifier-step-by-step-theoretical-explanation-with-python-implementation-d86c4973dc33}{https://medium.com/},
+  Gepubliceerd op 24 aug, 2021.
+\newblock Bezocht op 20 november 2023.
+
+\bibitem{Ramo_2017}
+Klevis Ramo.
+\newblock Spam emails with support vector machines.
+\newblock \href{https://ramok.tech/tag/svm/}{https://ramok.tech/tag/svm/},
+  Gepubliceerd op 9 oktober 2017.
+\newblock Bezocht op 8 december 2023.
+
+\end{thebibliography}

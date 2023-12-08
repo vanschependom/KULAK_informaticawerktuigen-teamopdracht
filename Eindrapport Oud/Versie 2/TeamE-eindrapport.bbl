@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{james2023introduction}
+Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan
+  Taylor.
+\newblock An introduction to statistical learning: With applications in python.
+\newblock {\em (No Title)}, 2023.
+
+\bibitem{Bhande_2018}
+Anup Bhande.
+\newblock What is underfitting and overfitting in machine learning and how to
+  deal with it., Mar 2018.
+
+\bibitem{enwiki:1183475870}
+{Wikipedia contributors}.
+\newblock Support vector machine --- {Wikipedia}{,} the free encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Support_vector_machine&oldid=1183475870},
+  2023.
+\newblock [Online; accessed 24-November-2023].
+
+\bibitem{mediumarticle}
+Tarlan Ahadli.
+\newblock Linear svm classifier: Step-by-step theoretical explanation with
+  python implementation.
+\newblock
+  \href{https://medium.com/@tarlanahad/linear-svm-classifier-step-by-step-theoretical-explanation-with-python-implementation-d86c4973dc33}{https://medium.com/},
+  Gepubliceerd op 24 aug, 2021.
+\newblock Bezocht op 20 november 2023.
+
+\end{thebibliography}
