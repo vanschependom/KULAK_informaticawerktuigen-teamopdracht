@@ -22,7 +22,7 @@ def fit(X, y, leerTempo, lambdaParam, aantalIteraties):
     w : ndarray
         De gewichtsvector van het model. Deze vector heeft dezelfde lengte als het aantal features.
     b : float
-        De intercept van de beslissingsrechte
+        De afstand van de beslissingsrechte tot de oorsprong
     '''
     aantalPunten, aantalFeatures = X.shape
 
@@ -68,7 +68,7 @@ def voorspelling(X, w, b):
     w : ndarray
         De gewichtsvector van het model.
     b : float
-        De intercept van de beslissingsrechte
+        De afstand van de beslissingsrechte tot de oorsprong
     '''
     voorspelling = np.dot(X, w) - b
 
@@ -89,7 +89,7 @@ def hyperplaneFunctie(x, w, b, offset):
     w : ndarray
         De gewichtsvector van het model.
     b : float
-        De intercept van de beslissingsrechte
+        De afstand van de beslissingsrechte tot de oorsprong
     offset : float
         De offset van de hyperplane. (-1, 0 of 1)
 
@@ -114,7 +114,7 @@ def accuraatheid(voorspellingen, labels):
     w : ndarray
         De gewichtsvector van het model.
     b : float
-        De intercept van de beslissingsrechte
+        De afstand van de beslissingsrechte tot de oorsprong
 
     Returns
     -------

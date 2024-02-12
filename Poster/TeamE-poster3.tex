@@ -7,7 +7,7 @@
 \faculty{Teamopdracht 2023 -- 2024}
 \title{Classificatie met lineaire Support Vector Machines}
 \author{Team \(\exists\)uler}
-\institute{Vincent Van Schependom, Daan Vanhaverbeke, Jasper Benoit, Lasha Shergelashvili, Marie Taillieu, Zeineb Kharbach, Florian Degraeve, Younes Mebarki}
+\institute{Vincent Van Schependom, Daan Vanhaverbeke, Jasper Benoit, Lasha Shergelashvili, Marie Taillieu,\\ Zeineb Kharbach, Florian Degraeve, Younes Mebarki}
 \photo{groepsfoto}
 
 \newcommand{\norm}[1]{\left\| #1 \right\|}
@@ -68,11 +68,11 @@
 			\vspace{1cm}
 			
 			\begin{itemize}
-				\item \(\vec{w}\) is de \textbf{normaalvector} op de hypervlakken
-				\item \(b\) is de \textit{\textbf{intercept}} van de rechte die de\\ beslissingsrechte beschrijft
-				\item De punten die op/in de marge ligggen, \\heten de \textbf{\textit{support vectors}}
-				\item De \textbf{beslissingsgrens} ligt in het midden van beide hypervlakken
-				\item Maximalisatie van de \textbf{marge}\\
+				\item \(\vec{w}\): \textbf{normaalvector} op de hypervlakken
+				\item \(b\): afstand van de oorsprong tot de \\beslissingsgrens
+				\item \textbf{marge}: \(\frac{2}{\norm{\vec{w}}}\) breed
+				\item \textbf{\textit{support vectors}}: de punten die op/in de marge liggen
+				\item \textbf{beslissingsgrens}: ligt in het midden van de marge
 				
 			\end{itemize}
 			
@@ -83,7 +83,8 @@
 		\vspace{0.5cm}
 		
 		\centering
-		\(\frac{2}{\norm{\vec{w}}}\) maximaliseren \(\Rightarrow\) \(\norm{\vec{w}}\) minimaliseren
+		\large
+		\boxed{\(\frac{2}{\norm{\vec{w}}}\) maximaliseren \(\Rightarrow\) \(\norm{\vec{w}}\) minimaliseren}
 		
 		\vfill \null
 	
@@ -94,24 +95,25 @@
 	\section{\textit{Hinge loss} \(l\)}
 	
 	De \textbf{\textit{hinge loss}} is een soort foutterm die als volgt gedefinieerd wordt:
-	\[l=\max{(0,1-y_i(\vec{w}\cdot\vec{x}_i-b))}\]
+	\large\[l=\max{(0,1-y_i(\vec{w}\cdot\vec{x}_i-b))}\]
+	
+	\normalsize
 	
 	\vspace{0.5cm}
 	
 		\textbf{Goed geclassificeerde punten:}
 		\begin{itemize}
-			\item Aan de juiste kant van het positief/negatief hypervlak
-			\item 	\(\left. \begin{array}{ll}
+			\item Buiten de marge:\\
+			\(\left. \begin{array}{ll}
 				\vec{w}\cdot \vec{x}_i-b\geq 1 & \text{als } y_i=1 \\
 				\vec{w}\cdot \vec{x}_i-b\leq -1 & \text{als } y_i=-1
-			\end{array} \right\} \Rightarrow y_i(\vec{w}\cdot \vec{x}_i-b)\geq 1 \Rightarrow \boxed{$l=0$} \)
+			\end{array} \right\} \Rightarrow y_i(\vec{w}\cdot \vec{x}_i-b)\geq 1 \large \Rightarrow \boxed{$l=0$} \)
+			\item In de marge \large \(\Rightarrow\) \boxed{$0<l\leq 1$}
 		\end{itemize}
 		\vspace{0.5cm}
-		\textbf{Slecht geclassificeerde punten:}\\
-		Twee opties:
+		\textbf{Slecht geclassificeerde punten:}
 		\begin{itemize}
-			\item In de marge \(\Rightarrow\) \boxed{$0<l\leq 1$}
-			\item Aan de foute kant van de beslissingsgrens \(\Rightarrow\) \boxed{$l > 1$}
+			\item Aan de foute kant van de beslissingsgrens \large \(\Rightarrow\) \boxed{$l > 1$}
 		\end{itemize}
 	
 \section{Kostfunctie \(J\)}
@@ -123,9 +125,9 @@
 	\end{itemize}
 	\columnbreak
 	Kostfunctie \(J\) minimaliseren:
-	\[\min_{w,b}J=\min_{w,b}\left(\frac{1}{n} \sum_{i=1}^n{\max{l_i}} + \lambda\cdot{||\vec{w}||}^2\right)\]
+	\large\[\min_{w,b}J=\min_{w,b}\left(\frac{1}{n} \sum_{i=1}^n{\max{l_i}} + \lambda\cdot{||\vec{w}||}^2\right)\]
 \end{multicols}
-
+\normalsize
 \columnbreak
 
 \section{Regularisatieparameter \(\lambda\)}
@@ -135,8 +137,8 @@ De metaparameter wordt bij SVM de \textbf{regularisatieparameter} genoemd, aange
 Deze \(\lambda\) heeft invloed op de minimalisatie van \(J\):
 
 \begin{itemize}
-\item Kleine \(\lambda\) \(\rightarrow\) zo veel mogelijk \textit{hinge losses} op 0 zetten \(\rightarrow\) \boxed{kleine marge} 
-\item Grote \(\lambda\) \(\rightarrow\) meer nadruk op het minimaliseren van de grootte van \(\norm{\vec{w}}\) \(\rightarrow\) \boxed{grote marge}
+\item \underline{Kleine \(\lambda\)} \(\rightarrow\) zo veel mogelijk \textit{hinge losses} op 0 zetten \(\rightarrow\) \boxed{kleine marge} 
+\item \underline{Grote \(\lambda\)} \(\rightarrow\) meer nadruk op het minimaliseren van de grootte van \(\norm{\vec{w}}\) \(\rightarrow\) \boxed{grote marge}
 \end{itemize}
 
 \photohere
@@ -144,14 +146,14 @@ Deze \(\lambda\) heeft invloed op de minimalisatie van \(J\):
 \includegraphics[width=.98\columnwidth]{regularisatieparameter}
 
 \end{multicols}
-\section{Voordelen van tegenover andere classificatietechnieken}
+\section{Voordelen van SVM tegenover andere classificatietechnieken}
 	
 	\begin{multicols}{3}
 		
 		\vfill \null
 		
 		\begin{center}
-		\textit{Hinge loss} is een \textbf{goede \textit{loss}-functie}\\
+		\textit{Hinge loss} is een \textbf{goede \textit{loss}-functie} vanwege de verminderde rekentijd\\
 		\includegraphics[width=.99\columnwidth]{lossfuncties}
 		\end{center}
 		

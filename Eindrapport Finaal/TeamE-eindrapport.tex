@@ -71,7 +71,7 @@
 		x_2 \\
 		x_3 \\
 		\vdots \\
-		x_p
+		x_n
 	\end{array} \right] = \left[ 
 	\begin{array}{ccccc}
 		x_{11} & x_{12} & x_{13} & \ldots & x_{1p}  \\
@@ -89,7 +89,7 @@
 	
 	Bij \textit{unsupervised learning} is er voor elk datapunt in de dataset zowel features als outputs voor handen. Er is sprake van zogenaamde 'input-outputparen'. We kunnen ons model trainen op het vinden van een verband tussen de \(x\)-waarden en de \(y\)-waarden in onze trainingsdataset. Het uiteindelijke doel is dan dat het model voor een nieuwe dataset, op basis van de \textit{features} in die dataset, een output zal voorspellen.
 	
-	Bij \textit{unsupervised learning} zal de data enkel uit inputs of \(x\)-waarden bestaan en zijn er dus geen afhankelijke variabelen. Een \textit{unsupervised learning}-model zal zelf patronen of structuren trachten te vinden in de data en vervolgens de data zelf onderverdelen in klassen. De details achter \emph{unsupervised learning} liggen buiten de scope van dit rapport en zullen we dus achterwege laten.
+	Bij \textit{unsupervised learning} zal de data enkel uit inputs of \(x\)-waarden bestaan en zijn er dus geen afhankelijke variabelen. Een \textit{unsupervised learning}-model zal zelf patronen of structuren trachten te vinden in de data en vervolgens de data zelf onderverdelen in klassen. De details achter \emph{unsupervised learning} liggen buiten het bestek van dit rapport en zullen we dus achterwege laten.
 	
 	\subsection{Uitbreiding van de notatie}
 
@@ -110,11 +110,11 @@
 	
 	\section{De hypervlakken}
 	
-	We stellen een voorschrift op voor de twee scheidingsrechten, die te zien zijn in figuur \ref{fig:svm}, waartussen zich een marge bevindt. Als \(\vec{w}\) de normaalvector is op de hypervlakken, kunnen we de vergelijkingen van deze rechten schrijven als \(\vec{w}\cdot \vec{x}-b=1\) en \(\vec{w}\cdot \vec{x}-b=-1\). Hierbij is \(b\) dan de \textit{intercept} van de rechte die de beslissingsgrens beschrijft. De \textit{intercept} is de \(y\)-waarde voor \(x=0\). Alle punten boven het eerste hypervlak worden geclassificeerd als horend tot de ene klasse. De punten onder het tweede hypervlak worden geclassificeerd als horende tot de andere klasse.
+	We stellen een voorschrift op voor de twee scheidingsrechten, die te zien zijn in figuur \ref{fig:svm}, waartussen zich een marge bevindt. Als \(\vec{w}\) de normaalvector is op de hypervlakken, kunnen we de vergelijkingen van deze rechten schrijven als \(\vec{w}\cdot \vec{x}-b=1\) en \(\vec{w}\cdot \vec{x}-b=-1\). Hierbij is \(b\) dan de de afstand van de beslissingsgrens tot de oorsprong. Alle punten boven het eerste hypervlak worden geclassificeerd als horend tot de ene klasse. De punten onder het tweede hypervlak worden geclassificeerd als horende tot de andere klasse.
 	
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=.7\textwidth]{svm-afbeelding}
+		\includegraphics[width=.5\textwidth]{svm}
 		\caption{Twee lineair scheidbare wolken van punten. De kleuren van de punten duiden aan tot welke klasse ze behoren.}
 		\label{fig:svm}
 	\end{figure}
@@ -127,12 +127,12 @@
 	
 	\subsection{\textit{Hinge loss}}
 	
-	De \textit{hinge loss} is een soort foutterm die we toevoegen aan punten die niet goed of met geen grote zekerheid worden geclassificeerd. Deze \textit{hinge loss} wordt berekend door de formule \[\max{(0,1-y_i(\vec{w}\cdot\vec{x}_i-b))}\] Deze foutterm laat ons toe om de fouten te beperken, terwijl we de marge maximaliseren. Voor elk punt hebben we dan twee mogelijkheden wat de waarde van de \textit{hinge loss} betreft:
+	De \textit{hinge loss} is een soort foutterm die we toevoegen aan punten die niet goed of met geen grote zekerheid worden geclassificeerd. Deze \textit{hinge loss} wordt gevisualiseerd in figuur \ref{fig:hingeloss} en wordt berekend door de formule \[\max{(0,1-y_i(\vec{w}\cdot\vec{x}_i-b))}\] Deze foutterm laat ons toe om de fouten te beperken, terwijl we de marge maximaliseren. Voor elk punt hebben we dan twee mogelijkheden wat de waarde van de \textit{hinge loss} betreft:
 	
 	\begin{enumerate}
-		\item Het punt met afhankelijke variabele \(y_i\) werd correct geclassificeerd.
+		\item Het punt met afhankelijke variabele \(y_i\) werd met zekerheid correct geclassificeerd.
 		
-		Dan ligt het punt dus aan de juiste kant van een van de twee hyperplanes. In dit geval is \(y_i(\vec{w}\cdot\vec{x}_i-b)\ge1\) en zal \(1 - y_i(\vec{w}\cdot\vec{x}_i-b)\le0\). Omdat de \textit{hinge loss} het maximum neemt van 0 en dit laatste getal - dat ofwel ook 0, ofwel negatief is - zal de \textit{hinge loss} in dit geval 0 zijn.
+		Dan ligt het punt dus aan de juiste kant van een van de twee hyperplanes, buiten de marge. In dit geval is \(y_i(\vec{w}\cdot\vec{x}_i-b)\ge1\) en zal \(1 - y_i(\vec{w}\cdot\vec{x}_i-b)\le0\). Omdat de \textit{hinge loss} het maximum neemt van 0 en dit laatste getal - dat ofwel ook 0, ofwel negatief is - zal de \textit{hinge loss} in dit geval 0 zijn.
 		
 		\item Het punt ligt in de marge of het punt ligt aan de verkeerde kant van de beslissingslijn. 
 		
@@ -144,6 +144,13 @@
 	Om het SVM-model te trainen, moeten we nu dus met twee zaken rekening houden. Enerzijds willen we \(\norm{\vec{w}}\) minimaliseren om een zo groot mogelijke marge te bekomen anderzijds willen we de \textit{hinge loss} of strafterm zo klein mogelijk houden. We voeren een kostfunctie \(J\) in en zoeken het minimum \(\min_{w, b}J\) van deze functie. Het minimalisatieprobleem wordt dan gegeven door de formule \[\min_{w, b}J=\min_{w, b}\left[\frac{1}{n}\sum_{i=1}^n{\max{[0,1-y_i(\vec{w}\cdot\vec{x}_i-b)]}} + \lambda\cdot{||\vec{w}||}^2\right]\]
 	
 	Hierbij is \(\frac{1}{n}\sum_{i=1}^n{\max{[0,1-y_i(\vec{w}\cdot\vec{x}_i-b)]}}\) de gemiddelde \textit{hinge loss}, dus de gemiddelde foutterm die werd toegekend over alle \(n\) datapunten in de dataset. De tweede term \(\lambda\cdot{||\vec{w}||}^2\) regelt het evenwicht tussen enerzijds het minimaliseren van de fouten op de trainingsdata en anderzijds het maximaliseren van de marge. \(\lambda\) is een metaparameter van het model en deze parameter vertelt aan het model hoeveel belang we hechten aan het minimaliseren van \(\norm{\vec{w}}\).
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=.8\textwidth]{lossfuncties}
+		\caption{Drie verschillende \textit{loss functies} vergeleken met elkaar. \textit{Hinge loss} heeft de voorkeur vanwege de verminderde rekentijd.}
+		\label{fig:hingeloss}
+	\end{figure}
 	
 	\chapter{De regularisatieparameter \(\lambda\)} 
 	
